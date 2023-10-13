@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mail.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="newUser">
+            <form class="newUser_form" name="user">
+                <p>Login</p>
+                <input type="text" class="newUser_login" name="login" placeholder="Enter login..." required>
+                <p>Password</p>
+                <input type="password" class="newUser_password" name="password"placeholder="Enter password..." required>
+                <p>Email address</p>
+                <input type="email" placeholder="Enter email..." class="newUser_email" name="email" required>
+                <button type="button" class="newUser_btn_addUser" onclick="addUser()">Add user</button>
+                <button type="button" class="user-edit-btn hide" onclick="saveEditUser()">Edit user</button>
+            </form>
+        </div>
+        <div class="usersList">
+            <table>
+                <thead>
+                    <tr class="table_head">
+                        <th>#</th>
+                        <th>Login</th>
+                        <th>Password</th>
+                        <th>Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="userList">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
